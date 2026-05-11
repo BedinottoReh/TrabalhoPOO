@@ -2,16 +2,17 @@
 
 package service;
 
+import model.Experiencia;
 import java.util.Collections;
 import java.util.Comparator;
-import.java.util.List;
+import java.util.List;
 
 public class RelatorioService{
-    public void ordenarPorPreco(List<Experiencia>eventos){
-        Collections.sort(eventos, new comparator<Experiencia>(){
+    public void ordenarPorPreco(List<Experiencia> eventos){
+        Collections.sort(eventos, new Comparator<Experiencia>(){
             @Override
             public int compare(Experiencia e1, Experiencia e2){
-                return double.compare(e1.getPrecoBase(), e2.getPrecoBase());
+                return Double.compare(e1.getPrecoBase(), e2.getPrecoBase());
             }
         });
     }

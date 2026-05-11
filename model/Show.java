@@ -1,6 +1,6 @@
 package model;
 
-import jata.time.LocalDateTime;
+import java.time.LocalDateTime;
 
 public class Show extends Experiencia {
 

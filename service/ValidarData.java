@@ -6,6 +6,6 @@ import java.time.LocalDateTime; //biblioteca data/hora
 public class ValidarData {
     //método estático de classe para validar se o evento é futuro
     public static boolean DataValida(LocalDateTime dataEvento) {
-        return dataEvento.isAfter(LocalDateTime.now()); [cite: 29]
+        return dataEvento.isAfter(LocalDateTime.now());
     }
 }
